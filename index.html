@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat app</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- 
+
+	<script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+
+    <script> 
+    $(function () {
+    var socket = io();
+    $('form').submit(function(){
+      socket.emit('chat', $('#m').val());
+      $('#m').val('');
+      return false;
+    });
+    socket.on('chat', function(msg){
+      $('#messages').append($('<li>').text(msg));
+    });
+  });
+  </script> -->
+</head>
+<body>
+
+	<div class="chatbox">
+		<div class="chatlogs">
+
+			<div class="chat friend">
+				<div class="user-photo"><img src="img/manu.jpg"></div>
+				<p class="chat-message">what's up bro.....hiiiiiiiiiiiiiiiiiiii hellooooooooooooooooooooooo!!!</p>
+			</div>
+			<div class="chat self">
+				<div class="user-photo"><img src="img/jaya.jpg"></div>
+				<p class="chat-message">what's up dude....!!!</p>
+			</div>
+			<div class="chat friend">
+				<div class="user-photo"></div>
+				<p class="chat-message">what's up sister.....!!!</p>
+			</div>
+		</div>
+		<div class="chat-form">
+			<textarea></textarea>
+			<button>Send</button>
+		</div>
+
+		</div>
+	</div>
+
+
+
+	<!-- <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+ -->
+</body>
+</html>
